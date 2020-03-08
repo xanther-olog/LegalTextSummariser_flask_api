@@ -1,0 +1,27 @@
+InputData
+  def getData(document_name):
+  return document
+
+CleanCorpus
+  getSentences(document):
+  return paras_dt,tncs_dt,sentences,tncs_list
+
+GetDictionary
+  def getDictionary(type):
+  return dictionary
+
+ProcessStopwords
+  def processStopwords(document)
+  return docWordList
+
+WordListGeneration
+  def generateWordList(docWordList,dictionary):
+  return foundWordsList,newWordsList
+
+RankBasedSort
+  def rankBasedSort(foundWordsList,tncs):
+  return rankSet,rankToSentences_dict
+
+WordCountBasedSort
+  def wordCountSort(rankSet,rankToSentences_dict,foundWordsList):
+  return sortedSentenceList
