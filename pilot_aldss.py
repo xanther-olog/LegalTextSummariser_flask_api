@@ -8,13 +8,14 @@ from WordListGeneration import *
 
 from RankBasedSort import *
 from WordCountBasedSort import *
+
 import sys
 
-def func():
+def func(document):
 
     #document_name=input("Select document to summarize:")
-    document_name='data.txt'
-    document=getData(document_name)
+    #document_name='data.txt'
+    #document=getData(document_name)
     paras_dt,tncs_dt,tncs_list=getSentences(document)
     for t in tncs_list:
         print(t)
@@ -31,4 +32,4 @@ def func():
     for sentence in sortedSentenceList:
         print(sentence)
 
-func()
+    return sortedSentenceList
